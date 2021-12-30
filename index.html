@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Animal World</title>
+</head>
+<body>
+    <div id="main">
+        <header id="header">
+            <div class="nav flex grid">
+                <div class="nav-logo grid-6 hide">
+                    <a href="" class="nav-logo--link">Animal World</a>
+                </div>
+                <!--menu bars-->
+                <div class="menu-bars display">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+                </div>
+                <div class="nav-box flex grid-6">
+                    <ul class="nav-list flex hide ">
+                        <li class="nav-item">
+                            <a href="#" class="nav-item-link">
+                                Home
+                                <span class="border-item"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-item-link">
+                                Info
+                                <span class="border-item"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-item-link">
+                                News
+                                <span class="border-item"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="nav-account flex">
+                        <button class="nav-account--btn">Login</button>
+                        <button class="nav-account--btn">Register</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <div id="slider">
+                <div class="slider-background" style="background-image: url('./assets/img/jungle-2.jpg');">
+                    <div class="slider-box flex grid">
+                        <div class="slider-content grid-6">
+                            <h3 class="slider-title">Helping you to get information about animals</h3>
+                            <p class="slider-label">
+                                <label for="slider--input-animals" class="slider-label--name">Find your favorite animals</label>
+                                <input type="text" id="slider--input-animals" placeholder="Enter your favorite animals...">
+                                <button class="slider-btn">Find</button>
+                            </p>
+                        </div>
+                        <div class="slider-banner grid-6">
+                            <div class="slider-banner--img" style="background-image: url('./assets/img/img-banner.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!--danh sách động vật trên cạn-->
+                <div class="terrestrialAnimals">
+                    <!--tiêu đề-->
+                    <div class="terrestrialAnimals-heading">
+                        <h3 class="terrestrialAnimals-title">Terrestrial Animals</h3>
+                        <p class="terrestrialAnimals-text bottom">Terrestrial animals are animals that live all or most of the time on earth.</p>
+                    </div>
+                    <!--danh sách động vật-->
+                    <div class="terrestrialAnimals-box grid flex">
+                        <ul class="terrestrialAnimals-list grid-6-4 flex">
+                            <li class="terrestrialAnimals-item col col-lg-4 left">
+                                <div class="terrestrialAnimals-img" style="background-image: url('./assets/img/terrestrialAnimals/horse.png');"></div>
+                                <div class="terrestrialAnimals-content">
+                                    <h3 class="terrestrialAnimals-item-name">Horse</h3>
+                                    <p class="terrestrialAnimals-item-info">Is a species of mammal in the family Equidae, order Perissodactyla (hooves).</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                            <li class="terrestrialAnimals-item col col-lg-4 right">
+                                <div class="terrestrialAnimals-img" style="background-image: url('./assets/img/terrestrialAnimals/lion.png');"></div>
+                                <div class="terrestrialAnimals-content">
+                                    <h3 class="terrestrialAnimals-item-name">Lion</h3>
+                                    <p class="terrestrialAnimals-item-info">Is one of the great cats in the family Cats and a species of leopard.</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                            <li class="terrestrialAnimals-item col col-lg-4 left">
+                                <div class="terrestrialAnimals-img" style="background-image: url('./assets/img/terrestrialAnimals/tiger.png');"></div>
+                                <div class="terrestrialAnimals-content">
+                                    <h3 class="terrestrialAnimals-item-name">Tiger</h3>
+                                    <p class="terrestrialAnimals-item-info">Is a feline mammal classified as one of the five species of "big cats" in the genus Panthera.</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                        </ul>
+                        <div class="terrestrialAnimals-background grid-4-6 right">
+                            <div class="terrestrialAnimals-background--img" style="background-image: url('./assets/img/terrestrialAnimals/tree_.png');"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--danh sách động vật dưới biển-->
+                <div class="seaAnimals">
+                    <!--tiêu đề-->
+                    <div class="seaAnimals-heading">
+                        <h3 class="seaAnimals-title bottom">Sea Animals</h3>
+                        <p class="seaAnimals-text right">The blue ocean is home to all sorts of marine life, from microscopic microalgae to the largest animal on the planet, the blue whale.</p>
+                    </div>
+                    <!--danh sách động vật dưới biển-->
+                    <div class="seaAnimals-box grid flex">
+                        <ul class="seaAnimals-list grid-6-4 flex">
+                            <li class="seaAnimals-item col col-lg-4 right">
+                                <div class="seaAnimals-img" style="background-image: url('./assets/img/seaAnimals/turtle.png');"></div>
+                                <div class="seaAnimals-content">
+                                    <h3 class="seaAnimals-item-name">Turtle</h3>
+                                    <p class="seaAnimals-item-info">The order Turtles (scientific name: Testudines) are reptiles belonging to the crown group of the superorder Chelonia (or Testudinata).</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                            <li class="seaAnimals-item col col-lg-4 left">
+                                <div class="seaAnimals-img" style="background-image: url('./assets/img/seaAnimals/squid.png');"></div>
+                                <div class="seaAnimals-content">
+                                    <h3 class="seaAnimals-item-name">Squid</h3>
+                                    <p class="seaAnimals-item-info">The molluscs in the superorder Decapodiformes (superorder Ten-legged) and part of the superorder Octopodiformes (superorder Octopus).</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                            <li class="seaAnimals-item col col-lg-4 right">
+                                <div class="seaAnimals-img" style="background-image: url('./assets/img/seaAnimals/shark.png');"></div>
+                                <div class="seaAnimals-content">
+                                    <h3 class="seaAnimals-item-name">Shark</h3>
+                                    <p class="seaAnimals-item-info">Is a group of fish in the class Cartilaginous fish, with a hydrodynamic body that easily displaces water, with 5 to 7 gill slits along each side or near the head (the first slot behind the eye is called the spiracle), the skin has many small spines covering coat the body against parasites, the rows of teeth in the mouth can grow back.</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                        </ul>
+                        <div class="seaAnimals-background grid-4-6 bottom">
+                            <div class="seaAnimals-background--img" style="background-image: url('./assets/img/seaAnimals/sea.png');"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--danh sách động vật trên không-->
+                <div class="AerialAnimals">
+                    <!--tiêu đề-->
+                    <div class="AerialAnimals-heading">
+                        <h3 class="AerialAnimals-title bottom">Aerial animals</h3>
+                        <p class="AerialAnimals-text left">A group of vertebrates, warm-blooded, bipedal, have beaks, lay eggs, have wings, have feathers, and fly (mostly).</p>
+                    </div>
+                    <!--danh sách động vật trên không-->
+                    <div class="AerialAnimals-box grid flex">
+                        <ul class="AerialAnimals-list grid-6-4 flex">
+                            <li class="AerialAnimals-item col col-lg-4 left">
+                                <div class="AerialAnimals-img" style="background-image: url('./assets/img/aerialAnimals/birds.png');"></div>
+                                <div class="AerialAnimals-content">
+                                    <h3 class="AerialAnimals-item-name">Birds</h3>
+                                    <p class="AerialAnimals-item-info">Is a group of vertebrates, warm-blooded, bipedal, have beaks, lay eggs, have wings, have feathers, and fly (mostly).</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                            <li class="AerialAnimals-item col col-lg-4 right">
+                                <div class="AerialAnimals-img" style="background-image: url('./assets/img/aerialAnimals/eagle.png');"></div>
+                                <div class="AerialAnimals-content">
+                                    <h3 class="AerialAnimals-item-name">Eagle</h3>
+                                    <p class="AerialAnimals-item-info">Is a large bird of prey in the order Falcon, family Accipitridae. They live everywhere with high mountains and primeval forests that have not been cleared by humans such as the coasts of Australia, Indonesia, Africa...</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                            <li class="AerialAnimals-item col col-lg-4 left">
+                                <div class="AerialAnimals-img" style="background-image: url('./assets/img/aerialAnimals/owl.png');"></div>
+                                <div class="AerialAnimals-content">
+                                    <h3 class="AerialAnimals-item-name">Catbird</h3>
+                                    <p class="AerialAnimals-item-info">Is an order of birds of prey, usually solitary and hunt at night. The order Owl has over 200 species. Owl species hunt small animals, insects, small birds, some species also hunt fish.</p>
+                                </div>
+                               <div class="animals-link">
+                                   <a href="#" class="read-more--link">Learn more</a>
+                               </div>
+                            </li>
+                        </ul>
+                        <div class="AerialAnimals-background grid-4-6 bottom">
+                            <div class="AerialAnimals-background--img" style="background-image: url('./assets/img/aerialAnimals/cloud.png')"></div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+              <!--slider thông tin động vật-->
+            <div id="infoAnimals">
+                <div class="infoAnimals-background" style="background-image: url('./assets/img/jungle-Cartoon.jpg');">
+                    <!--danh sách động vật-->
+                    <ul class="infoAnimals-list flex grid single-item right">
+                        <li class="infoAnimals-item flex grid">
+                            <div class="infoAnimals-item-img grid-6 bottom" style="background-image: url('./assets/img/inforSliderAnimals/rhino.png');"></div>
+                            <div class="infoAnimals-content grid-6">
+                                <div class="infoAnimals-heading">
+                                    <h2 class="infoAnimals-title">Terrestrial Animals</h2>
+                                </div>
+                                <div class="infoAnimals-box">
+                                    <h3 class="infoAnimals-name left">Rhino</h3>
+                                    <div class="infoAnimals-info ">
+                                        <ul class="infoAnimals-info--list">
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Height: </h4>
+                                                <p class="inforAnimals-text">1.4 – 1.7m (4.6–5.8 ft)</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Weight</h4>
+                                                <p class="inforAnimals-text">450 - 1360 kg</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Eat:</h4>
+                                                <p class="inforAnimals-text">Plant</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Description:</h4>
+                                                <p class="inforAnimals-description--item">Are odd-toed ungulate mammals in the family Rhinocerotidae. Of the five extant species, two live in Africa, and three live in South Asia. The term "rhinoceros" is generally applied more broadly to the now-extinct species of the superfamily Rhocerotoidea.</p>
+                                            </li>
+                                        </ul>
+                                        <div class="infoAnimals-more">
+                                            <a href="#" class="infoAnimals-more--link">Learn More -></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="infoAnimals-item flex grid">
+                            <div class="infoAnimals-item-img grid-6" style="background-image: url('./assets/img/inforSliderAnimals/panda.png');"></div>
+                            <div class="infoAnimals-content grid-6">
+                                <div class="infoAnimals-heading">
+                                    <h2 class="infoAnimals-title">Terrestrial Animals</h2>
+                                </div>
+                                <div class="infoAnimals-box">
+                                    <h3 class="infoAnimals-name">Panda</h3>
+                                    <div class="infoAnimals-info">
+                                        <ul class="infoAnimals-info--list">
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Height: </h4>
+                                                <p class="inforAnimals-text">60 – 90 cm</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Weight</h4>
+                                                <p class="inforAnimals-text">70 – 120 kg</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Eat:</h4>
+                                                <p class="inforAnimals-text">Carnivora && Plant</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Description:</h4>
+                                                <p class="inforAnimals-description--item">Pandas live on land and spend most of their time roaming and feeding in bamboo forests in the mountainous regions of Sichuan province.[16] Giant pandas are usually solitary,[17] and each adult has a defined territory, the adult female will not tolerate any female that dares to enter her territory.</p>
+                                            </li>
+                                        </ul>
+                                        <div class="infoAnimals-more">
+                                            <a href="#" class="infoAnimals-more--link">Learn More -></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="infoAnimals-item flex grid">
+                            <div class="infoAnimals-item-img grid-6" style="background-image: url('./assets/img/inforSliderAnimals/crocodile.png');"></div>
+                            <div class="infoAnimals-content grid-6">
+                                <div class="infoAnimals-heading">
+                                    <h2 class="infoAnimals-title">Terrestrial Animals</h2>
+                                </div>
+                                <div class="infoAnimals-box">
+                                    <h3 class="infoAnimals-name">Crocodile</h3>
+                                    <div class="infoAnimals-info">
+                                        <ul class="infoAnimals-info--list">
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Height: </h4>
+                                                <p class="inforAnimals-text">3,0‑6,0m (length)</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Weight</h4>
+                                                <p class="inforAnimals-text">150‑500 KG</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Eat:</h4>
+                                                <p class="inforAnimals-text">Carnivora</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Description:</h4>
+                                                <p class="inforAnimals-description--item">As cold-blooded carnivores, they can go days without food, and rarely find them necessary to actively hunt. Despite their slow appearance, crocodiles are excellent predators in their environment, and some species of crocodiles have been seen to attack and kill lions, large ungulates and even lions. even sharks.</p>
+                                            </li>
+                                        </ul>
+                                        <div class="infoAnimals-more">
+                                            <a href="#" class="infoAnimals-more--link">Learn More -></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="infoAnimals-item flex grid">
+                            <div class="infoAnimals-item-img grid-6" style="background-image: url('./assets/img/inforSliderAnimals/bear_brown.png');"></div>
+                            <div class="infoAnimals-content grid-6">
+                                <div class="infoAnimals-heading">
+                                    <h2 class="infoAnimals-title">Terrestrial Animals</h2>
+                                </div>
+                                <div class="infoAnimals-box">
+                                    <h3 class="infoAnimals-name">Brown Bear</h3>
+                                    <div class="infoAnimals-info">
+                                        <ul class="infoAnimals-info--list">
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Height: </h4>
+                                                <p class="inforAnimals-text">70 – 150 cm</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Weight</h4>
+                                                <p class="inforAnimals-text">80 – 600 kg</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Eat:</h4>
+                                                <p class="inforAnimals-text">Carnivora</p>
+                                            </li>
+                                            <li class="infoAnimals-info--item">
+                                                <h4 class="inforAnimals-description">Description:</h4>
+                                                <p class="inforAnimals-description--item">Are mainly nocturnal animals and in the summer they accumulate up to 180 kg (400 pounds) of fat, which is gradually consumed during the winter when they hibernate. Although they do not actually hibernate due to their ease of awakening, they prefer to burrow into protected places such as burrows, burrows or deep depressions to escape the cold weather of the winter months.</p>
+                                            </li>
+                                        </ul>
+                                        <div class="infoAnimals-more">
+                                            <a href="#" class="infoAnimals-more--link">Learn More -></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Thống kê động vật-->
+            <div id="statistics" class="flex grid">
+                <div class="statistics-img grid-6 bottom" style="background-image: url('https://khoahocnet.files.wordpress.com/2013/02/evolution-tree.jpg');"></div>
+                <div class="statistics-content grid-6">
+                    <div class="statistics-heading top">
+                        <h3 class="statistics-name">Statistics Animals</h3>
+                        <p class="statistics-text">According to unofficial statistics, there are currently about 7.7 million known species of animals on our planet.</p>
+                    </div>
+                    <ul class="statistics-list flex left">
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Sponges :</div>
+                            <p class="statistics-info">10.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Cnidarians :</div>
+                            <p class="statistics-info">8.000 - 9.0000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Mollusks :</div>
+                            <p class="statistics-info">100.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Platyhelminths:</div>
+                            <p class="statistics-info">13.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Nematode :</div>
+                            <p class="statistics-info">20.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Prickly skin :</div>
+                            <p class="statistics-info">6.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Annelida :</div>
+                            <p class="statistics-info">12.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Crustaceans :</div>
+                            <p class="statistics-info">40.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Insect :</div>
+                            <p class="statistics-info">1 - 30.000.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Arachnids :</div>
+                            <p class="statistics-info">75.500</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Reptile :</div>
+                            <p class="statistics-info">7.984</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Amphibians :</div>
+                            <p class="statistics-info">5.400</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Bird :</div>
+                            <p class="statistics-info">9.000 - 10.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Mammal :</div>
+                            <p class="statistics-info">4.475 - 5.000</p>
+                        </li>
+                        <li class="statistics-item grid-6">
+                            <div class="statistics-item--name">Rayfin fish :</div>
+                            <p class="statistics-info">23.500</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+           <div class="footer-content">
+               <ul class="footer-list-link flex">
+                   <li class="footer-item-link bottom">
+                       <a href="#" class="footer-link">
+                           <div class="footer-link--icon">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>
+                           </div>
+                       </a>
+                   </li>
+                   <li class="footer-item-link top">
+                       <a href="#" class="footer-link">
+                           <div class="footer-link--icon">                              
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                           </div>
+                       </a>
+                   </li>
+                   <li class="footer-item-link bottom">
+                       <a href="#" class="footer-link">
+                           <div class="footer-link--icon">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                           </div>
+                       </a>
+                   </li>
+                   <li class="footer-item-link top">
+                       <a href="mail:Sinhdoan2000s@gmail.com" class="footer-link">
+                           <div class="footer-link--icon">
+                                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path></svg>
+                           </div>
+                       </a>
+                   </li>
+               </ul>
+               <div class="footer-box">
+                   <h3 class="footer-box--title right">Follow Us!</h3>
+                   <p class="footer-box--text left">Thanks for visiting us, we will make the best for you</p>
+               </div>
+           </div>
+        </footer>
+    </div>
+
+    <div id="modal">
+        <div class="modal-close">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+        </div>
+        <!--truy cập tài khoản-->
+        <div class="account gird flex">
+            <div class="account-background grid-6-4" style="background-image: url('./assets/img/jungle-3.jpg');"></div>
+            <div class="account-container grid-4">
+
+                <div class="account-heading">
+                    <div class="close-modal">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                    </div>
+                    <h3 class="account-slogan">Welcome to Animal World!</h3>
+                </div>
+                <!--form đăng nhập-->
+                <form action="" id="form-login">
+                        <div class="form-group">
+                            <label for="" class="form-name">Fullname</label>
+                            <input type="text" id="fullname" placeholder="Enter fullname">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-name">Password</label>
+                            <input type="password" id="password" placeholder="Enter at least 6 characters">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="" id="remember-account">
+                            <label for="" class="form-name remember">Remember</label>
+                        </div>
+                        <div class="form-btn">
+                            <button type="submit" id="btn-login">Login</button>
+                        </div>
+                        <div class="account-ask">
+                            <p class="account-ask--text">Do not have an account? 
+                                <a href="#" class="account-link account-link--register">Register</a>
+                            </p>
+                        </div>
+                </form>
+                <!-----form đăng ký-->
+                <form action="" id="form-register">
+                    <div class="form-group">
+                        <label for="" class="form-name">Fullname</label>
+                        <input type="text" id="fullname-rgt" placeholder="ex: Doan Xuan Sinh">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-name">Email</label>
+                        <input type="email" id="email" placeholder="Ex: abc@domain.com">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-name">Password</label>
+                        <input type="password" id="password-rgt" placeholder="Enter at least 6 characters">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="form-name">Password again</label>
+                        <input type="password" id="password-again" placeholder="Enter at least 6 characters">
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit" id="btn-register">Register</button>
+                    </div>
+                    <div class="account-ask">
+                        <p class="account-ask--text">You have an account? 
+                            <a href="#" class="account-link account-link--login">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--container css-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <!--slick slider-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/handleScroll.js"></script>
+
+    <!--login/register-->
+    <script src="./assets/js/login.js"></script>
+
+    <!--responsive website-->
+    <script src="./assets/js/responsive.js"></script>
+</body>
+</html>

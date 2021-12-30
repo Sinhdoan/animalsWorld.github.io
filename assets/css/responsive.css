@@ -1,0 +1,384 @@
+/* -----<= pc small-------------- */
+@media (max-width: 1239px){
+    .hide{
+        display: none !important;
+    }
+    .display{
+        display: block !important;
+    }
+
+    /* xử lý list item */
+    .nav .nav-box{
+        justify-content: right;
+    }
+    .nav .nav-box .nav-list{
+        position: absolute;
+        left: 0;
+        top: var(--height-header);
+        width: 100%;
+        height: 201px;
+        background-color: var(--primany-color);
+        padding: 20px 40px;
+    }
+    .nav .nav-box .nav-item{
+        border-bottom: 0.5px solid var(--white-color);
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+    .nav .nav-box .nav-item:hover{
+        background-color: var(--white-color);
+        border-bottom: 0.5px solid var(--black-color);
+    }
+    .nav-box .nav-list .nav-item-link{
+        color: var(--white-color);
+    }
+    .nav .nav-box .nav-item:hover .nav-item-link{
+        color: var(--black-color);
+    }
+    /* account login/register */
+    .account-background{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+}
+
+/* --------pc small-------------- */
+@media (min-width: 1024px) and (max-width: 1239px){
+        /* account login/register */
+        .account-container{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* -----slider----- */
+        #slider .slider-background{
+            height: 500px;
+        }
+        .slider-box .slider-content .slider-title{
+            font-size: 40px;
+            line-height: 44px;
+        }
+        .slider-box .slider-banner{
+            padding: 130px 40px 40px;
+        }
+        .terrestrialAnimals-img, .seaAnimals-img, .AerialAnimals-img{
+            height: 150px;
+        }
+
+        /* -----info animals----- */
+        #infoAnimals .infoAnimals-background{
+            height: 530px;
+        }
+        #infoAnimals .infoAnimals-list{
+            padding: 65px !important;
+        }
+        .infoAnimals-info--list .infoAnimals-info--item{
+            line-height: 30px;
+        }
+        .infoAnimals-more .infoAnimals-more--link {
+            font-weight: 800;
+            color: rgb(11 236 11);
+        }
+        /* -----statistics----- */
+        .statistics-img{
+            padding: 50px;
+        }
+}
+
+
+/* ------- tablet-------------- */
+@media (min-width: 740px) and (max-width: 1023px){
+
+    .account-container{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+    }
+    /* slider */
+    #slider .slider-background{
+        height: 410px;
+    }
+    .slider-box .slider-content .slider-title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .slider-label .slider-label--name{
+        font-size: 22px;
+        margin-top: 15px;
+    }
+    #slider--input-animals{
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .slider-label .slider-btn{
+        padding: 10px 25px;
+    }
+    .slider-box .slider-banner{
+        padding: 90px 20px 0;
+    }
+
+    /* container */
+    #content .container{
+        padding: 40px 0;
+    }
+    .terrestrialAnimals-heading .terrestrialAnimals-text, .seaAnimals-heading .seaAnimals-text, .AerialAnimals-heading .AerialAnimals-text{
+        width: 80%;
+    }
+    .terrestrialAnimals-box, .seaAnimals-box, .AerialAnimals-box{
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    }
+    .terrestrialAnimals-box .terrestrialAnimals-list, .seaAnimals-box .seaAnimals-list, .AerialAnimals-box .AerialAnimals-list{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .terrestrialAnimals-background--img, .seaAnimals-background--img, .AerialAnimals-background--img{
+        min-height: 220px;
+        margin-bottom: 15px;
+    }
+    .col {
+        margin: 0 10px;
+        padding: 0 24px;
+    }
+    .terrestrialAnimals-img, .seaAnimals-img, .AerialAnimals-img{
+        height: 140px;
+    }
+
+    /* info animal slider */
+    #infoAnimals .infoAnimals-background{
+        height: 470px;
+    }
+    #infoAnimals .infoAnimals-list{
+        padding: 50px !important;
+    }
+    .infoAnimals-heading .infoAnimals-title{
+        font-size: 25px;
+    }
+    .infoAnimals-content .infoAnimals-box{
+        margin-top: 0;
+    }
+    .infoAnimals-box .infoAnimals-name{
+        font-size: 20px;
+    }
+    .infoAnimals-info--list .infoAnimals-info--item{
+        line-height: 25px;
+    }
+    .infoAnimals-info--item .inforAnimals-description{
+        font-size: 18px;
+    }
+    .infoAnimals-more .infoAnimals-more--link {
+        font-weight: 800;
+        color: rgb(11 236 11);
+    }
+
+    /* -----statistics------- */
+    #statistics{
+        flex-direction: column-reverse;
+    }
+    .statistics-content{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .statistics-list .statistics-item {
+        height: 100%;
+        margin: 0px -18px;
+        padding: 0 18px;
+        text-align: center;
+    }
+    .statistics-img{
+        width: 100%;
+        flex: 0 0 100%;
+        min-height: 400px;
+        padding: 0 100px;
+    }
+}
+
+
+/* --------mobile-------------- */
+@media (max-width: 739px){
+    .account-container{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    .close-modal{
+        display: block;
+        width: 30px;
+        height: 30px;
+        float: right;
+    }
+    .close-modal svg{
+        width: 30px;
+        height: 30px;
+        color: var(--primany-color);
+    }
+    .nav-box .nav-account .nav-account--btn{
+        padding: 10px 5px;
+        font-size: 10px;
+    }
+
+    /* ---slider---- */
+    #slider .slider-background{
+        height: 260px;
+    }
+    .slider-box .slider-content .slider-title{
+        font-size: 18px;
+        line-height: 20px;
+        margin: 0;
+    }
+    .slider-label .slider-label--name{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .slider-box .slider-content .slider-label{
+        padding-right: 0;
+    }
+    #slider--input-animals{
+        margin-top: 10px;
+        font-size: 12px;
+        height: 35px;
+    }
+    .slider-label .slider-btn{
+        font-size: 12px;
+        padding: 6px 25px;
+        margin-top: 5px;
+    }
+    .slider-box .slider-banner {
+        height: 100%;
+        padding: 80px 0 0px;
+    }
+
+
+    /* -----content----- */
+    #content .container{
+        padding: 30px 0;
+    }
+    .terrestrialAnimals-background--img, .seaAnimals-background--img, .AerialAnimals-background--img{
+        min-height: 220px;
+    }
+    .terrestrialAnimals-heading .terrestrialAnimals-title, .seaAnimals-heading .seaAnimals-title, .AerialAnimals-heading .AerialAnimals-title{
+        font-size: 30px;
+    }
+    .terrestrialAnimals-heading .terrestrialAnimals-text, .seaAnimals-heading .seaAnimals-text, .AerialAnimals-heading .AerialAnimals-text{
+        width: 90%;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .terrestrialAnimals-box, .seaAnimals-box, .AerialAnimals-box{
+        margin-top: 30px;
+        flex-direction: column-reverse;
+    }
+    .terrestrialAnimals-background{
+        width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+    .terrestrialAnimals-box .terrestrialAnimals-list, .seaAnimals-box .seaAnimals-list, .AerialAnimals-box .AerialAnimals-list{
+        width: 100%;
+        flex: 0 0 100%;
+        padding: 0 85px;
+    }
+    .terrestrialAnimals-item, .seaAnimals-item, .AerialAnimals-item{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .col{
+        margin: 15px 0px;
+        padding: 0;
+    }
+    .terrestrialAnimals-content, .seaAnimals-content, .AerialAnimals-content{
+        padding: 10px;
+        margin: 0;
+    }
+    .terrestrialAnimals-item-info, .seaAnimals-item-info, .AerialAnimals-item-info{
+        margin: 0;
+    }
+    .terrestrialAnimals-img, .seaAnimals-img, .AerialAnimals-img{
+        height: 140px;
+    }
+
+    /* ----info animals slider---- */
+    #infoAnimals .infoAnimals-list{
+        padding: 25px !important;
+    }
+    #infoAnimals .infoAnimals-background{
+        height: 300px;
+    }
+    .infoAnimals-heading .infoAnimals-title{
+        font-size: 18px;
+    }
+    .infoAnimals-content .infoAnimals-box{
+        margin-top: 0;
+        padding: 10px;
+    }
+    .infoAnimals-box .infoAnimals-name{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .infoAnimals-info--list .infoAnimals-info--item{
+        line-height: 16px;
+    }
+    .infoAnimals-info--item .inforAnimals-description{
+        font-size: 14px;
+        width: 50px;
+    }
+    .infoAnimals-info--item .inforAnimals-text{
+        font-size: 12px;
+    }
+    .inforAnimals-description--item{
+        font-size: 12px;
+        padding: 0;
+        line-height: 14px;
+        margin-top: 10px;
+    }
+    .infoAnimals-info--item .inforAnimals-description{
+        font-size: 12px;
+        line-height: 14px;
+        margin: 0;
+    }
+    .infoAnimals-more .infoAnimals-more--link{
+        font-size: 14px;
+    }
+
+    /* -----statistics----- */
+    #statistics{
+        flex-direction: column-reverse;
+    }
+    .statistics-content{
+        width: 100%;
+        flex: 0 0 100%;
+    }
+    .statistics-content .statistics-list{
+        padding: 10px;
+        justify-content: center;
+    }
+    .statistics-list .statistics-item {
+        border-bottom: 1px solid var(--primany-color);
+    }
+    .statistics-list .statistics-item--name {
+        width: 100%;
+        font-size: 16px;
+    }
+    .statistics-info{
+        font-size: 14px;
+    }
+
+    .statistics-img{
+        width: 100%;
+        flex: 0 0 100%;
+        min-height: 300px;
+        padding: 20px 30px;
+    }
+
+    /* ----footer---- */
+    .footer-box--title{
+        font-size: 25px;
+    }
+}
+
+
